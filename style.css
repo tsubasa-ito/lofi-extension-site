@@ -59,9 +59,47 @@ body {
   box-shadow: 0 10px 30px rgba(124, 58, 237, 0.4);
 }
 
+.cta-button.firefox {
+  background: #ff7139;
+}
+
+.cta-button.firefox:hover {
+  box-shadow: 0 10px 30px rgba(255, 113, 57, 0.4);
+}
+
+.cta-button.edge {
+  background: #0078d4;
+}
+
+.cta-button.edge:hover {
+  box-shadow: 0 10px 30px rgba(0, 120, 212, 0.4);
+}
+
 .cta-button.small {
   padding: 10px 25px;
   font-size: 0.95rem;
+}
+
+/* Download Buttons */
+.download-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.browser-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Sections */
