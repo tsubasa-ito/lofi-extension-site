@@ -23,7 +23,7 @@ Lofi BGM Player 拡張機能のランディングページです。
 
 - **Chrome**: [Chrome Web Store](https://chromewebstore.google.com/detail/lofi-bgm-player/jdcppdokgfbnhiacbeplahgnciahnhck)
 - **Firefox**: [Firefox Add-ons](https://addons.mozilla.org/firefox/addon/lofi-bgm-player/)
-- **Edge**: [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/detail/lofi-bgm-player/)
+- **Edge**: 準備中（Microsoft Edge Add-ons 申請中）
 
 ## Development
 
