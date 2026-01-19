@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OGP画像プレビュー</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #1a1a2e;
+      color: #fff;
+      padding: 40px;
+      text-align: center;
+    }
+    h1 {
+      margin-bottom: 20px;
+    }
+    .preview {
+      max-width: 100%;
+      border: 2px solid #333;
+      border-radius: 8px;
+      margin-bottom: 30px;
+    }
+    .instructions {
+      background: rgba(255,255,255,0.1);
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: left;
+    }
+    .instructions h2 {
+      color: #f4a261;
+      margin-bottom: 15px;
+    }
+    .instructions ol {
+      line-height: 1.8;
+    }
+    code {
+      background: rgba(0,0,0,0.3);
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+    a {
+      color: #f4a261;
+    }
+  </style>
+</head>
+<body>
+  <h1>OGP画像プレビュー (1200x630)</h1>
+  <img src="og-image.svg" alt="OGP Image Preview" class="preview" width="1200">
+
+  <div class="instructions">
+    <h2>PNGに変換する方法</h2>
+    <ol>
+      <li><strong>オンラインツール（推奨）:</strong><br>
+        <a href="https://svgtopng.com/" target="_blank">svgtopng.com</a> や
+        <a href="https://cloudconvert.com/svg-to-png" target="_blank">cloudconvert.com</a> で変換</li>
+      <li><strong>ブラウザで保存:</strong><br>
+        この画像を右クリック → 「名前を付けて保存」で <code>og-image.png</code> として保存<br>
+        （ブラウザによってはPNG形式で保存可能）</li>
+      <li><strong>Macのターミナル:</strong><br>
+        <code>qlmanage -t -s 1200 -o . og-image.svg</code></li>
+      <li><strong>ImageMagick（コマンドライン）:</strong><br>
+        <code>convert -density 150 og-image.svg og-image.png</code></li>
+      <li><strong>Inkscape（無料ソフト）:</strong><br>
+        SVGを開いて「Export PNG Image」で書き出し</li>
+    </ol>
+  </div>
+</body>
+</html>
